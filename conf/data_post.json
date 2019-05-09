@@ -2,5 +2,5 @@
   "username": "",
   "domain": "",
   "password": "",
-  "enablemacauth": ""
+  "enablemacauth": "0"
 }

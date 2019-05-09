@@ -1,8 +1,10 @@
 # User add
 .idea/
 conf/data_post.json
-log/
+log/login.log
 auth-demo.py
+auth-login.py
+test
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
