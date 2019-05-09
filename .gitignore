@@ -1,6 +1,6 @@
 # User add
 .idea/
-conf/
+conf/data_post.json
 log/
 auth-demo.py
 
