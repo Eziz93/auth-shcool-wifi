@@ -4,7 +4,6 @@ conf/data_post.json
 log/login.log
 auth-demo.py
 auth-login.py
-test
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
