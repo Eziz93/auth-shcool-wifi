@@ -56,6 +56,7 @@ class Login(object):
             self._data_post = json.load(f)
         # 密码进行base64加密
         self._data_post['password'] = base64.b64encode(bytes(self._data_post['password'], encoding='utf-8'))
+        logging.info('post data: username={}, domain={}'.format(self._data_post['username'], self._data_post['domain']))
 
         with open(self._conf_file, encoding='utf-8') as f:
             conf = json.load(f)
@@ -147,7 +148,10 @@ class Login(object):
         #       64:已经登录
         #       125:domain错误
         logging.info('Content-Length={}: {}'.format(content_length, self._content_len_msg[content_length]))
-        print('it\'s possible meaning: {}'.format(self._content_len_msg[content_length]))
+        if content_length in self._content_len_msg:
+            print('it\'s possible meaning: {}'.format(self._content_len_msg[content_length]))
+        else:
+            print('unknown num')
 
         # check the connection to the Internet
         logging.info('after post: check Internet')
