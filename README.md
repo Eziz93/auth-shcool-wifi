@@ -16,7 +16,7 @@ log/login.log: 登录脚本日志
 
 ### auth-login.py 登录
 
-1. 配置用户名、密码和域
+1. 在配置文件(conf/data_post.json)中设置用户名、密码和域:
     * username: 用户名
     * password: 密码
     * domain: 移动填写"CMCC"/电信填写"ChinaNet"
